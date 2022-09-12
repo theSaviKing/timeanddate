@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "name": "timeanddate",
+  "version": "1.0.0",
+  "main": "index.html",
+  "author": "T. Paul Kariuki",
+  "license": "MIT",
+  "scripts": {
+    "build:css": "tailwindcss -i ./css/input.css -o ./css/tailwind.css",
+    "build:watch": "yarn build:css -w"
+  }
+}
