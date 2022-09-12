@@ -26,14 +26,15 @@ function getTime12() {
     var hours = date.getHours();
     var minutes = date.getMinutes();
     var seconds = date.getSeconds();
-    var ampm = hours >= 12 ? 'pm' : 'am';
+    var ampm = hours >= 12 ? ' PM' : ' AM';
     hours = hours % 12;
     hours = hours ? hours : 12; // the hour '0' should be '12'
     minutes = minutes < 10 ? '0' + minutes : minutes;
     seconds = seconds < 10 ? '0' + seconds : seconds;
     document.getElementById("hours").textContent = hours;
     document.getElementById("minutes").textContent = minutes;
-    document.getElementById("seconds").textContent = seconds + " " + ampm;
+    document.getElementById("seconds").textContent = seconds;
+    document.getElementById("ampm").textContent = ampm;
 }
 var getTime = miltime ? getTime24 : getTime12
 getTime()

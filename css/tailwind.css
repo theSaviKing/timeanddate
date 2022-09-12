@@ -587,6 +587,16 @@ video {
   line-height: 2.5rem;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-light{
   font-weight: 300;
 }
@@ -601,6 +611,10 @@ video {
 
 .font-semibold{
   font-weight: 600;
+}
+
+.font-extralight{
+  font-weight: 200;
 }
 
 .lowercase{
