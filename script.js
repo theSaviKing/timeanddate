@@ -4,6 +4,14 @@ var miltime = true;
 if (up.has('hour') && up.get('hour') == 12 || up.has('ampm') || up.has('12hour')) {
     miltime = false;
 }
+if (up.has('fg')) {
+    document.body.style.color = up.get('fg')
+    console.log(up.get('fg'))
+}
+if (up.has('bg')) {
+    document.body.style.backgroundColor = up.get('bg')
+    console.log(up.get('bg'))
+}
 
 /**********/
 
